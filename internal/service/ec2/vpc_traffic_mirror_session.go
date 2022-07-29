@@ -60,6 +60,7 @@ func ResourceTrafficMirrorSession() *schema.Resource {
 			"traffic_mirror_target_id": {
 				Type:     schema.TypeString,
 				Required: true,
+				ForceNew: true,
 			},
 			"virtual_network_id": {
 				Type:         schema.TypeInt,
